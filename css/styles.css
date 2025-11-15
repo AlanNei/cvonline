@@ -10,6 +10,9 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
 :root {
   --color-base-1: #F5F5F0;
   --color-base-2: #E6D8C3;
@@ -133,6 +136,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 
 abbr[title] {
@@ -8263,6 +8267,32 @@ textarea.form-control-lg {
 
 .invisible {
   visibility: hidden !important;
+}
+
+.skill-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90px;
+}
+
+.skill-item i {
+    font-size: 2.3rem;
+    color: #5D866C; /* usa tu color personalizado */
+}
+
+.skill-item span {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #3a3a3a;
+    font-weight: 500;
 }
 
 @media (min-width: 576px) {
